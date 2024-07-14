@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ Title }}</title>
+</head>
+<body>
+    <h2>{{ Title }}</h2>
+    <form action="/register" method="POST">
+        <input type="hidden" name="_csrf" value="{{ CSRF }}">
+        <input type="email" name="email" placeholder="E-posta" required><br><br>
+        <input type="password" name="password" placeholder="Şifre" required><br><br>
+        <button type="submit">Kayıt Ol</button>
+    </form>
+    <p><a href="/login">Giriş Yap</a></p>
+</body>
+</html>

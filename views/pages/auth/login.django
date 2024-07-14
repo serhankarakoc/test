@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ Title }}</title>
+</head>
+<body>
+    <h2>{{ Title }}</h2>
+    <form action="/login" method="POST">
+        <input type="hidden" name="_csrf" value="{{ CSRF }}">
+        <input type="email" name="email" placeholder="E-posta" required><br><br>
+        <input type="password" name="password" placeholder="Şifre" required><br><br>
+        <input type="checkbox" name="remember"> Beni hatırla<br><br>
+        <button type="submit">Giriş Yap</button>
+    </form>
+    <p><a href="/forgot-password">Şifremi unuttum</a></p>
+    <p><a href="/register">Kayıt Ol</a></p>
+</body>
+</html>

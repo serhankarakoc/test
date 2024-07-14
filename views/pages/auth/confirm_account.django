@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ Title }}</title>
+</head>
+<body>
+    <h2>{{ Title }}</h2>
+    <form action="/confirm-account" method="POST">
+        <input type="hidden" name="_csrf" value="{{ CSRF }}">
+        <input type="text" name="token" placeholder="Doğrulama Kodu" required><br><br>
+        <button type="submit">Hesabı Onayla</button>
+    </form>
+    <p><a href="/login">Giriş Yap</a></p>
+</body>
+</html>
